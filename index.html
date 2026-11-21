@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salendram Nidhitha | AI Engineer & B.Tech Undergrad</title>
+  <meta name="description" content="Portfolio of Salendram Nidhitha - B.Tech in Artificial Intelligence at Anurag University, Hyderabad." />
+
+  <!-- Google Fonts: Syne + Outfit for high-end modern tech aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Outfit"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            cyber: {
+              bg: '#050a12',
+              surface: '#091322',
+              surfaceHover: '#0e1b2f',
+              border: 'rgba(34, 211, 238, 0.18)',
+              cyan: '#06b6d4',
+              teal: '#14b8a6',
+              mint: '#10b981',
+              neon: '#00f2fe',
+              textMuted: '#94a3b8'
+            }
+          },
+          boxShadow: {
+            'cyan-glow': '0 0 30px rgba(6, 182, 212, 0.28)',
+            'mint-glow': '0 0 30px rgba(16, 185, 129, 0.25)',
+            'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.45)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-[#050a12] text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-black min-h-screen relative overflow-x-hidden">
+
+  <!-- Subtle Cyber Tech Grid Background -->
+  <div class="fixed inset-0 cyber-grid pointer-events-none -z-20"></div>
+
+  <!-- Deep Ocean Teal & Cyan Ambient Light Orbs -->
+  <div class="fixed top-[-10%] right-[-10%] w-[650px] h-[650px] bg-cyan-600/10 rounded-full blur-[170px] pointer-events-none -z-10"></div>
+  <div class="fixed bottom-[-10%] left-[-10%] w-[700px] h-[700px] bg-teal-600/10 rounded-full blur-[180px] pointer-events-none -z-10"></div>
+  <div class="fixed top-[40%] left-[30%] w-[500px] h-[500px] bg-emerald-600/5 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+
+  <!-- Modern Floating Navbar -->
+  <header class="fixed top-5 left-0 right-0 z-50 px-4 sm:px-8">
+    <div class="max-w-6xl mx-auto h-16 rounded-2xl bg-[#091322]/80 backdrop-blur-xl border border-cyan-500/20 px-6 flex items-center justify-between shadow-glass">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 via-teal-400 to-emerald-400 flex items-center justify-center font-display font-extrabold text-black text-lg shadow-cyan-glow group-hover:scale-105 transition-all duration-300">
+          N
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-base tracking-wide text-white group-hover:text-cyan-300 transition-colors">
+            NIDHITHA
+          </span>
+          <span class="font-mono text-[10px] text-cyan-400/90 tracking-widest uppercase">AI Engineering</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#home" class="hover:text-cyan-400 transition-colors">Overview</a>
+        <a href="#about" class="hover:text-cyan-400 transition-colors">Profile</a>
+        <a href="#education" class="hover:text-cyan-400 transition-colors">Education</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Header Action Links -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://github.com/nidhithasalendram" target="_blank" rel="noopener noreferrer" 
+           class="w-9 h-9 rounded-lg bg-[#0e1b2f] border border-cyan-500/20 text-slate-300 hover:text-cyan-300 hover:border-cyan-400 flex items-center justify-center transition-all duration-300 hover:shadow-cyan-glow" title="GitHub Profile">
+          <i class="fa-brands fa-github text-sm"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/salendram-nidhitha-b9b50233a/" target="_blank" rel="noopener noreferrer" 
+           class="w-9 h-9 rounded-lg bg-[#0e1b2f] border border-cyan-500/20 text-slate-300 hover:text-cyan-300 hover:border-cyan-400 flex items-center justify-center transition-all duration-300 hover:shadow-cyan-glow" title="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in text-sm"></i>
+        </a>
+        <a href="mailto:nidhitha10001@gmail.com" 
+           class="px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-black font-semibold text-xs tracking-wider uppercase transition-all duration-300 shadow-cyan-glow hover:scale-105">
+          Email Me
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" aria-label="Open navigation" class="md:hidden text-slate-300 hover:text-cyan-400 p-2">
+        <i class="fa-solid fa-bars-staggered text-lg" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden mt-2 max-w-6xl mx-auto rounded-2xl bg-[#091322]/95 backdrop-blur-xl border border-cyan-500/25 p-5 shadow-glass space-y-3">
+      <a href="#home" class="block py-2 text-slate-200 hover:text-cyan-400 font-medium mobile-link">Overview</a>
+      <a href="#about" class="block py-2 text-slate-200 hover:text-cyan-400 font-medium mobile-link">Profile</a>
+      <a href="#education" class="block py-2 text-slate-200 hover:text-cyan-400 font-medium mobile-link">Education</a>
+      <a href="#contact" class="block py-2 text-slate-200 hover:text-cyan-400 font-medium mobile-link">Contact</a>
+      <div class="pt-2 flex items-center gap-3">
+        <a href="https://github.com/nidhithasalendram" target="_blank" class="px-4 py-2 bg-[#0e1b2f] rounded-lg text-xs text-cyan-300 font-mono flex items-center gap-2">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/salendram-nidhitha-b9b50233a/" target="_blank" class="px-4 py-2 bg-[#0e1b2f] rounded-lg text-xs text-cyan-300 font-mono flex items-center gap-2">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-32">
+    <!-- HERO SECTION: High-Impact Asymmetric Layout -->
+    <section id="home" class="min-h-[88vh] flex items-center py-12 px-5 sm:px-8">
+      <div class="max-w-6xl mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- LEFT HERO CONTENT -->
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs font-semibold mb-6 w-fit shadow-mint-glow">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span>UNDERGRADUATE CANDIDATE • ANURAG UNIVERSITY</span>
+            </div>
+
+            <!-- Big Main Headline -->
+            <h1 class="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-white tracking-tight leading-[1.1] mb-5">
+              Hi, I'm <br class="hidden sm:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 drop-shadow-[0_0_35px_rgba(6,182,212,0.35)]">
+                Salendram Nidhitha
+              </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="font-mono text-sm sm:text-base text-cyan-300/90 font-medium mb-5 tracking-wide">
+              Artificial Intelligence Student & Aspiring Software Engineer
+            </p>
+
+            <!-- Bio summary paragraph -->
+            <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
+              Undergraduate in <strong class="text-white font-semibold">Artificial Intelligence (2024–2028)</strong> at 
+              <span class="text-cyan-300">Anurag University, Hyderabad</span>. Dedicated to exploring deep learning, machine intelligence, and creating real-world software solutions that make an impact.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-4 mb-10">
+              <a href="#about" 
+                 class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-black font-semibold text-sm tracking-wide transition-all duration-300 shadow-cyan-glow hover:scale-105 flex items-center gap-2">
+                <span>Explore Profile</span>
+                <i class="fa-solid fa-arrow-down text-xs"></i>
+              </a>
+
+              <a href="https://github.com/nidhithasalendram" target="_blank" rel="noopener noreferrer" 
+                 class="px-5 py-3.5 rounded-xl bg-[#091322] hover:bg-[#0e1b2f] border border-cyan-500/30 hover:border-cyan-400 text-slate-200 hover:text-white font-medium text-sm flex items-center gap-2.5 transition-all duration-300 hover:scale-105">
+                <i class="fa-brands fa-github text-base text-cyan-400"></i>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/salendram-nidhitha-b9b50233a/" target="_blank" rel="noopener noreferrer" 
+                 class="px-5 py-3.5 rounded-xl bg-[#091322] hover:bg-[#0e1b2f] border border-cyan-500/30 hover:border-cyan-400 text-slate-200 hover:text-white font-medium text-sm flex items-center gap-2.5 transition-all duration-300 hover:scale-105">
+                <i class="fa-brands fa-linkedin-in text-base text-cyan-400"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+            <!-- Quick Pill Highlights -->
+            <div class="flex flex-wrap items-center gap-3 text-xs font-mono text-slate-400">
+              <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#091322] border border-cyan-500/20">
+                <i class="fa-solid fa-location-dot text-cyan-400"></i> Hyderabad, India
+              </span>
+              <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#091322] border border-cyan-500/20">
+                <i class="fa-solid fa-graduation-cap text-teal-400"></i> B.Tech AI (2024–2028)
+              </span>
+              <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#091322] border border-cyan-500/20">
+                <i class="fa-solid fa-brain text-emerald-400"></i> Anurag University
+              </span>
+            </div>
+
+          </div>
+
+          <!-- RIGHT HERO VISUAL: Clean Cyber-Card Portrait Frame -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-[340px] sm:max-w-[370px]">
+              
+              <!-- Subtle Cyber Glow backdrop -->
+              <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-teal-500 to-emerald-500 rounded-3xl blur-xl opacity-30 animate-pulse"></div>
+
+              <!-- Main Floating Card Container -->
+              <div class="relative rounded-3xl bg-[#091322] border border-cyan-500/30 p-4 shadow-glass overflow-hidden">
+                
+                <!-- Terminal Header Bar -->
+                <div class="flex items-center justify-between pb-3 mb-3 border-b border-cyan-500/15">
+                  <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                  </div>
+                  <span class="font-mono text-[11px] text-cyan-400/80">nidhitha_profile.ai</span>
+                </div>
+
+                <!-- Portrait Photo Box with Cyber Corner Brackets -->
+                <div class="relative rounded-2xl overflow-hidden aspect-[4/5] bg-[#050a12] border border-cyan-500/20">
+                  <img 
+                    src="assets/profile.jpg" 
+                    alt="Salendram Nidhitha" 
+                    class="w-full h-full object-cover object-[center_18%] hover:scale-105 transition-transform duration-700" 
+                  />
+
+                  <!-- Floating Tech Badge on image -->
+                  <div class="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-[#091322]/85 backdrop-blur-md border border-cyan-500/30 flex items-center justify-between">
+                    <div>
+                      <span class="block text-white font-bold text-xs">Salendram Nidhitha</span>
+                      <span class="block text-cyan-400 font-mono text-[10px]">AI Undergraduate</span>
+                    </div>
+                    <span class="w-7 h-7 rounded-lg bg-cyan-500/20 text-cyan-300 flex items-center justify-center text-xs">
+                      <i class="fa-solid fa-code"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Quick direct contact snippet below image -->
+                <div class="mt-4 pt-3 border-t border-cyan-500/15 flex items-center justify-between text-xs">
+                  <div class="flex items-center gap-2 text-slate-300">
+                    <i class="fa-regular fa-envelope text-cyan-400"></i>
+                    <span class="truncate max-w-[190px] font-mono text-[11px]">nidhitha10001@gmail.com</span>
+                  </div>
+                  <button onclick="copyEmail(event)" class="text-cyan-400 hover:text-white text-[11px] font-mono underline hover:no-underline cursor-pointer">
+                    copy
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION: Modern Bento Grid -->
+    <section id="about" class="py-24 px-5 sm:px-8 border-t border-cyan-500/10">
+      <div class="max-w-6xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 font-mono text-xs uppercase tracking-wider mb-3">
+            // 01. CANDIDATE PROFILE
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            About <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Me</span>
+          </h2>
+        </div>
+
+        <!-- Bento Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+          
+          <!-- Big Card: Bio & Motivation -->
+          <div class="md:col-span-8 p-7 sm:p-8 rounded-3xl bg-[#091322] border border-cyan-500/20 shadow-glass flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-3 mb-5">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 flex items-center justify-center text-lg">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h3 class="font-display font-bold text-xl text-white">Pursuing Artificial Intelligence Excellence</h3>
+              </div>
+              <p class="text-slate-300 text-base leading-relaxed mb-4">
+                I am an undergraduate student currently earning my <strong class="text-white">Bachelor of Technology in Artificial Intelligence (2024–2028)</strong> at 
+                <span class="text-cyan-300 font-medium">Anurag University, Hyderabad</span>.
+              </p>
+              <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-6">
+                I am captivated by the potential of intelligent algorithms to solve pressing, real-world problems. My academic endeavors center on mastering the core principles of artificial intelligence, programming logic, data structures, and intelligent software design.
+              </p>
+            </div>
+            
+            <div class="pt-5 border-t border-cyan-500/15 flex flex-wrap gap-4 text-xs font-mono text-cyan-300">
+              <span class="px-3 py-1.5 rounded-lg bg-[#050a12] border border-cyan-500/20">Machine Learning</span>
+              <span class="px-3 py-1.5 rounded-lg bg-[#050a12] border border-cyan-500/20">Problem Solving</span>
+              <span class="px-3 py-1.5 rounded-lg bg-[#050a12] border border-cyan-500/20">Algorithms</span>
+              <span class="px-3 py-1.5 rounded-lg bg-[#050a12] border border-cyan-500/20">Deep Tech</span>
+            </div>
+          </div>
+
+          <!-- Card 2: University & Status -->
+          <div class="md:col-span-4 p-7 sm:p-8 rounded-3xl bg-[#091322] border border-cyan-500/20 shadow-glass flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 border border-teal-500/30 flex items-center justify-center text-lg mb-4">
+                <i class="fa-solid fa-university"></i>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white mb-2">Anurag University</h3>
+              <p class="text-xs font-mono text-cyan-400 mb-4">Hyderabad, Telangana</p>
+              <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                Home to cutting-edge research infrastructure, collaborative peer circles, and academic guidance in Artificial Intelligence & Engineering.
+              </p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-[#050a12] border border-cyan-500/20 text-center">
+              <span class="block text-xl font-display font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">
+                2024 – 2028
+              </span>
+              <span class="text-[11px] font-mono text-slate-400 uppercase">Degree Timeline</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Metrics & Drive -->
+          <div class="md:col-span-4 p-6 rounded-3xl bg-[#091322] border border-cyan-500/20 shadow-glass text-center">
+            <span class="block font-display font-extrabold text-3xl text-cyan-400 mb-1">B.Tech</span>
+            <span class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Academic Program</span>
+            <p class="text-xs text-slate-400">Artificial Intelligence Specialization</p>
+          </div>
+
+          <!-- Card 4: Location & Hub -->
+          <div class="md:col-span-4 p-6 rounded-3xl bg-[#091322] border border-cyan-500/20 shadow-glass text-center">
+            <span class="block font-display font-extrabold text-3xl text-teal-400 mb-1">Hyderabad</span>
+            <span class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Technology Capital</span>
+            <p class="text-xs text-slate-400">Telangana, India</p>
+          </div>
+
+          <!-- Card 5: Open for Collaborations -->
+          <div class="md:col-span-4 p-6 rounded-3xl bg-[#091322] border border-cyan-500/20 shadow-glass text-center">
+            <span class="block font-display font-extrabold text-3xl text-emerald-400 mb-1">100%</span>
+            <span class="block text-xs font-mono text-slate-400 uppercase tracking-wider mb-2">Dedicated Focus</span>
+            <p class="text-xs text-slate-400">Active Learning & Exploration</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION: Modern Stepper / Milestone Architecture Cards -->
+    <section id="education" class="py-24 px-5 sm:px-8 border-t border-cyan-500/10">
+      <div class="max-w-6xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 font-mono text-xs uppercase tracking-wider mb-3">
+            // 02. ACADEMIC CREDENTIALS
+          </div>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+            Education & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">Qualifications</span>
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2">
+            The formal academic track establishing my engineering and scientific foundations.
+          </p>
+        </div>
+
+        <!-- 3 Modern Milestone Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Card 1: Anurag University (2024-2028 Current) -->
+          <div class="relative p-7 rounded-3xl bg-[#091322] border-2 border-cyan-500/40 shadow-cyan-glow flex flex-col justify-between group hover:border-cyan-400 transition-all duration-300">
+            <!-- Top tag -->
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-[11px] font-semibold flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  CURRENT
+                </span>
+                <span class="font-mono text-xs text-cyan-400 font-semibold">2024 – 2028</span>
+              </div>
+              
+              <h3 class="font-display font-bold text-xl text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                Bachelor of Technology
+              </h3>
+              <h4 class="text-teal-400 font-medium text-sm mb-3">
+                Artificial Intelligence
+              </h4>
+              <p class="text-slate-200 font-semibold text-xs mb-3">
+                Anurag University, Hyderabad
+              </p>
+              <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                Specialized undergraduate degree covering AI algorithms, Python programming, Computational thinking, Data Structures, and emerging technologies.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-cyan-500/15">
+              <span class="text-[11px] font-mono text-cyan-300">#AnuragUniversity #AI #BTech</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Intermediate (2022-2024) -->
+          <div class="relative p-7 rounded-3xl bg-[#091322] border border-cyan-500/20 shadow-glass flex flex-col justify-between group hover:border-cyan-400/50 transition-all duration-300">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 rounded-full bg-cyan-950/50 border border-cyan-500/20 text-cyan-300 font-mono text-[11px] font-semibold">
+                  COMPLETED
+                </span>
+                <span class="font-mono text-xs text-cyan-400 font-semibold">2022 – 2024</span>
+              </div>
+              
+              <h3 class="font-display font-bold text-xl text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                Intermediate
+              </h3>
+              <h4 class="text-teal-400 font-medium text-sm mb-3">
+                Sri Chaitanya
+              </h4>
+              <p class="text-slate-200 font-semibold text-xs mb-3">
+                Sri Chaitanya Junior College
+              </p>
+              <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                Built comprehensive mathematical proficiency and analytical capability through higher secondary studies in Mathematics, Physics, and Chemistry.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-cyan-500/15">
+              <span class="text-[11px] font-mono text-cyan-300">#SriChaitanya #Intermediate</span>
+            </div>
+          </div>
+
+          <!-- Card 3: SSC (2021-2022) -->
+          <div class="relative p-7 rounded-3xl bg-[#091322] border border-cyan-500/20 shadow-glass flex flex-col justify-between group hover:border-cyan-400/50 transition-all duration-300">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-2.5 py-1 rounded-full bg-cyan-950/50 border border-cyan-500/20 text-cyan-300 font-mono text-[11px] font-semibold">
+                  COMPLETED
+                </span>
+                <span class="font-mono text-xs text-cyan-400 font-semibold">2021 – 2022</span>
+              </div>
+              
+              <h3 class="font-display font-bold text-xl text-white mb-1 group-hover:text-cyan-300 transition-colors">
+                SSC (10th Grade)
+              </h3>
+              <h4 class="text-teal-400 font-medium text-sm mb-3">
+                Sri Chaitanya
+              </h4>
+              <p class="text-slate-200 font-semibold text-xs mb-3">
+                Sri Chaitanya High School
+              </p>
+              <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                Achieved strong academic distinction in secondary school education, sparking my initial enthusiasm for computational logic and science.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-cyan-500/15">
+              <span class="text-[11px] font-mono text-cyan-300">#SriChaitanya #SecondarySchool</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION: Clean Direct Action Panel -->
+    <section id="contact" class="py-24 px-5 sm:px-8 border-t border-cyan-500/10">
+      <div class="max-w-4xl mx-auto text-center">
+        
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/40 border border-cyan-500/30 text-cyan-300 font-mono text-xs uppercase tracking-wider mb-3">
+          // 03. COMMUNICATION
+        </div>
+
+        <h2 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight mb-4">
+          Connect With <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400">Nidhitha</span>
+        </h2>
+
+        <p class="text-slate-400 text-base max-w-xl mx-auto mb-12">
+          I am eager to connect regarding AI projects, academic collaborations, or tech opportunities. Reach out via email or social links below!
+        </p>
+
+        <!-- Social Action Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
+          
+          <!-- Gmail -->
+          <a href="mailto:nidhitha10001@gmail.com" 
+             class="group p-6 rounded-2xl bg-[#091322] border border-cyan-500/25 hover:border-cyan-400 transition-all duration-300 flex flex-col items-center text-center shadow-glass hover:shadow-cyan-glow">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <span class="text-[11px] font-mono uppercase text-slate-400 mb-1">Direct Mail</span>
+            <span class="text-white text-xs sm:text-sm font-semibold group-hover:text-cyan-300 transition-colors break-all">nidhitha10001@gmail.com</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/salendram-nidhitha-b9b50233a/" target="_blank" rel="noopener noreferrer" 
+             class="group p-6 rounded-2xl bg-[#091322] border border-cyan-500/25 hover:border-cyan-400 transition-all duration-300 flex flex-col items-center text-center shadow-glass hover:shadow-cyan-glow">
+            <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 border border-teal-500/30 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <span class="text-[11px] font-mono uppercase text-slate-400 mb-1">Professional Network</span>
+            <span class="text-white text-sm font-semibold group-hover:text-cyan-300 transition-colors">LinkedIn Profile</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/nidhithasalendram" target="_blank" rel="noopener noreferrer" 
+             class="group p-6 rounded-2xl bg-[#091322] border border-cyan-500/25 hover:border-cyan-400 transition-all duration-300 flex flex-col items-center text-center shadow-glass hover:shadow-cyan-glow">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center justify-center text-lg mb-4 group-hover:scale-110 transition-transform">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <span class="text-[11px] font-mono uppercase text-slate-400 mb-1">Code & Projects</span>
+            <span class="text-white text-sm font-semibold group-hover:text-cyan-300 transition-colors">github/nidhithasalendram</span>
+          </a>
+
+        </div>
+
+        <!-- Copy Email Button -->
+        <button onclick="copyEmail(event)" 
+                class="px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-black font-semibold text-xs tracking-wider uppercase transition-all duration-300 shadow-cyan-glow hover:scale-105 inline-flex items-center gap-2">
+          <i class="fa-regular fa-copy"></i>
+          <span>Copy Email Address</span>
+        </button>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-cyan-500/10 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 Salendram Nidhitha • Artificial Intelligence, Anurag University</p>
+      <div class="flex items-center gap-5 text-slate-400">
+        <a href="https://github.com/nidhithasalendram" target="_blank" class="hover:text-cyan-400 transition-colors" title="GitHub">
+          <i class="fa-brands fa-github text-base"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/salendram-nidhitha-b9b50233a/" target="_blank" class="hover:text-cyan-400 transition-colors" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in text-base"></i>
+        </a>
+        <a href="mailto:nidhitha10001@gmail.com" class="hover:text-cyan-400 transition-colors" title="Email">
+          <i class="fa-regular fa-envelope text-base"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Toast Notification -->
+  <div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-5 py-2.5 rounded-xl bg-[#091322]/95 border border-cyan-400/50 text-white text-xs font-mono shadow-cyan-glow flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+    <span id="toastMsg">Email copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
